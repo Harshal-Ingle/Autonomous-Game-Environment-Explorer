@@ -1,2 +1,5 @@
-# Autonomous-Game-Environment-Explorer
-This ReAct Agent simulates finding a Treasure ('T') on a map by planning the path, moving, and updating its memory step-by-step.
+# Autonomous Game Environment Explorer
+## Problem Statement :
+This project solves the challenge of making LLMs perform complex, multi-step tasks and navigate dynamic or unknown environments. LLMs are great at reasoning but weak at memory, spatial understanding, and tool usage. Our 5×5 grid world acts as a simple testbed to overcome these limitations and build more reliable autonomous agents.
+
+This project is about creating an AI agent that can explore a small 5×5 world and find a treasure. Because normal LLMs can’t remember things well or understand spaces, the agent follows a simple pattern: it thinks, takes an action, sees what happened, and then updates its memory. The environment is the grid world, the tools let the agent move or check its surroundings, and a basic planner (using BFS) decides the best path to follow. Step by step, the agent moves, learns, and keeps track of where it has been until it finally reaches the treasure. The whole system is built in Python, and in the future it could be improved with a real LLM, harder challenges, or smarter pathfinding.
